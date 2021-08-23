@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='utf-8'?>
+<interface version="1.1">
+  <object class="ttk.Frame" id="top_frame">
+    <property name="height">200</property>
+    <property name="padding">10</property>
+    <property name="width">200</property>
+    <layout manager="grid">
+      <property name="column">0</property>
+      <property name="propagate">True</property>
+      <property name="row">0</property>
+      <property name="sticky">nsew</property>
+      <property type="col" id="0" name="weight">1</property>
+      <property type="row" id="0" name="weight">1</property>
+    </layout>
+    <child>
+      <object class="ttk.Label" id="label6">
+        <property name="font">{Arial} 16 {bold}</property>
+        <property name="text" translatable="yes">Team Calculator Project</property>
+        <layout manager="grid">
+          <property type="col" id="0" name="weight">1</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Frame" id="frame6">
+        <property name="height">200</property>
+        <property name="width">200</property>
+        <layout manager="grid">
+          <property name="column">0</property>
+          <property name="propagate">True</property>
+          <property name="row">5</property>
+          <property type="col" id="0" name="weight">1</property>
+          <property type="row" id="5" name="weight">1</property>
+        </layout>
+        <child>
+          <object class="ttk.Label" id="label7">
+            <property name="text" translatable="yes">Featuring a Grams to Ounces Calculator</property>
+            <layout manager="pack" />
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Label" id="label8">
+            <property name="text" translatable="yes">and an Ounces to Grams Calculator.	</property>
+            <layout manager="pack" />
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Label" id="label9">
+            <property name="text" translatable="yes">By Person 1 Name</property>
+            <layout manager="pack" />
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Label" id="label10">
+            <property name="text" translatable="yes">And Person 2 Name</property>
+            <layout manager="pack" />
+          </object>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>
