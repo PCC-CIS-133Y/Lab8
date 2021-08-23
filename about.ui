@@ -34,13 +34,13 @@
         </layout>
         <child>
           <object class="ttk.Label" id="label7">
-            <property name="text" translatable="yes">Featuring a Grams to Ounces Calculator</property>
+            <property name="text" translatable="yes">Featuring an About tab</property>
             <layout manager="pack" />
           </object>
         </child>
         <child>
           <object class="ttk.Label" id="label8">
-            <property name="text" translatable="yes">and an Ounces to Grams Calculator.	</property>
+            <property name="text" translatable="yes">and a Grams to Ounces Calculator.	</property>
             <layout manager="pack" />
           </object>
         </child>
