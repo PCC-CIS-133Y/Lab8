@@ -11,6 +11,10 @@ from GramsToOuncesApp import GramsToOuncesApp
 
 class MainApp:
     def __init__(self, master):
+        # This is needed to allow the notebook tabs to stretch.
+        tk.Grid.columnconfigure(master, 0, weight=1)
+        tk.Grid.rowconfigure(master, 0, weight=1)
+
         # build ui
         self.__main_notebook = ttk.Notebook(master)
         self.__main_notebook.grid(column='0', row='0', sticky='nsew')
