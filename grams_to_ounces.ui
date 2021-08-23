@@ -95,9 +95,39 @@
         <child>
           <object class="ttk.Label" id="result_label">
             <property name="font">{Arial} 12 {bold}</property>
+            <property name="padding">10</property>
             <property name="text" translatable="yes">Results...</property>
             <property name="textvariable">string:result_label_variable</property>
-            <layout manager="pack" />
+            <layout manager="grid">
+              <property name="column">0</property>
+              <property name="columnspan">2</property>
+              <property name="propagate">True</property>
+              <property name="row">0</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Label" id="ounces_label">
+            <property name="text" translatable="yes">Ounces:</property>
+            <layout manager="grid">
+              <property name="column">0</property>
+              <property name="propagate">True</property>
+              <property name="row">1</property>
+              <property name="sticky">e</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Entry" id="ounces_entry">
+            <property name="state">readonly</property>
+            <property name="textvariable">string:ounces_entry_variable</property>
+            <property name="width">15</property>
+            <layout manager="grid">
+              <property name="column">1</property>
+              <property name="propagate">True</property>
+              <property name="row">1</property>
+              <property name="sticky">w</property>
+            </layout>
           </object>
         </child>
       </object>

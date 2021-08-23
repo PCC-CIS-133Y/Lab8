@@ -27,14 +27,14 @@ class GramsToOuncesApp:
         # Save these two UI elements as properties so that we can access them when
         # the user clicks on the calculate button.
         self.__grams_entry = builder.get_object('grams_entry', master)
-        self.__result_label_variable = builder.get_variable('result_label_variable')
+        self.__ounces_entry_variable = builder.get_variable('ounces_entry_variable')
 
     def calculate(self):
         # Convert grams to ounces. If there's an error, display an error message.
         try:
             grams = float(self.__grams_entry.get())
             ounces = grams / self.GRAMS_PER_OUNCE
-            self.__result_label_variable.set(F"{grams} grams is {ounces:.3} ounces.")
+            self.__ounces_entry_variable.set("{:.2f} ounces".format(ounces))
         except ValueError:
             mb.showerror(title="Error Calculating Ounces!", message="Grams must be a decimal number. Please try again.")
 
